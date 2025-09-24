@@ -6,20 +6,21 @@
         <title>Etch-a-Sketch</title>
         <link href="style.css" rel="stylesheet">
 </head>
-<body>
- <div>
-   <label> Grid Size: <input  id="gridSize" type="number" min="4" max="100" value="16"></label>
+<body>       
+<div class="controls">
+   <label> Grid Size: <input  id="gridSizeInput" type="number" min="4" max="100" value="16"></label>
    <button id="setGrid">Set Grid</button>
-   <label>Color Picker:<inout id="colorPicker" type="color" value="#000000" ></inout></label>
+   <label>Color:<input id="colorPicker" type="color" value="#000000" ></inout></label>
    <select id="colorMode">
         <option value="static">Static</option>
         <option value="random">RGB</option>
    </select>
     <button id="clearGrid">Clear</button> 
     <button id="eraser">Eraser</button>
-</div> 
-   
-    <div class="grid-container"></div>  
+</div>        
+  
+        <div class="grid-container"></div>    
+           
    <script src="script.js"></script>  
 </body>
 </html>
